@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+  <title>NYC Prospects</title>
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Josefin+Slab|Pacifico|Plaster|Shadows+Into+Light|Zilla+Slab" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="nyc_events.css">
+
+  <script>
+  var quotes= ["Dreams and dedication are a powerful combination.","Difficult roads often lead to beautiful destinations."
+  ,"Every mountain top is within reach if you just keep climbing.","I can and I will.","Be fearless in the pursuit of what sets your soul on fire."
+,"Beauty begins the moment you decide to be yourself."]
+
+  function newQuote() {
+    var randomNumber= Math.floor(Math.random()*(quotes.length));
+    document.getElementById("demo").innerHTML = quotes[randomNumber]
+  }
+  </script>
+</head>
+
+<body>
+
+<center>
+
+<h3>NYC PROSPECTS </h3>
+ 
+
+  <div class="dropdown">
+   <center> 
+   <img src="http://scorecapture.com/ScoreCapture/Images/DropDownMenu.png">
+   </center>
+    <div class="dropdown-content">
+      <span class="museums">
+      <a href="museums.html">  Museums</a>
+      </span>
+      <span class="activities">
+      <a href="activities.html">Activities<a/>
+      </span>
+      <span class="food">
+      <a href="food.html">Food</a>
+      </span>
+      <span class="team">
+      <a href="team.html">Meet the Team</a>
+      </span>
+</center>
+</div>
+</div>
+
+<center>
+  <p id="demo">Click below for inspiration.</p>
+  <button onclick="newQuote()"> Inspiration </button>
+</center>
+
+</body>
+</html>

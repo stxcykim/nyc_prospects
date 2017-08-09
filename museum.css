@@ -1,0 +1,167 @@
+/*changing of text in menu when hovered over */
+.museums:hover, .activities:hover, .attractions:hover, .food:hover,.team:hover{
+  color: #A9A9A9;
+}
+
+/*setting the size for the map*/
+#map {
+        height: 400px;
+        width: 100%;
+       } 
+
+/*keeping the menu fixed at the top of the page */
+.navigation{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border:2px solid black;
+  border-radius: 3px;
+  background-color: black;
+}
+
+/*museum text */
+h1{
+  font-family: 'Zilla Slab', serif;
+  font-size:70px;
+  margin-top: 200px;
+}
+
+/*title for each museum */
+h2{
+  font-family: 'Shadows Into Light', cursive;
+  font-weight:bold;
+  color:white;
+}
+
+/*text for nyc logo */
+h4{
+  color:white;
+  font-size: 50px;
+  font-family: 'Monoton', cursive;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/*text for things in menu */
+h3{
+  color:white;
+  font-family: 'Zilla Slab', serif;
+  /*font-family: 'Shadows Into Light', cursive;*/
+  font-size: 25px;
+}
+
+/*styling for the address,cost and info part*/
+p{
+  font-family: 'Zilla Slab', serif;
+  color:white;
+}
+
+/*changing of menu after it is clicked on */
+a{
+  color:white;
+  text-decoration: none;
+}
+
+/*styling the "reserve now" button */
+button{
+  font-family: 'Zilla Slab', serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-color: white;
+  background-color: transparent;
+  color:white;
+  border-radius: 3px;
+  padding: 15px 25px;
+}
+
+/*changing style of button when hovered over */
+button:hover, button:focus {
+background-color: white;
+color:black;
+}
+
+img{
+  width:100px;
+  margin: 10px;
+}
+
+
+
+/*LIST OF MUSEUMS BELOW */
+
+
+.moma{
+  background-image:url("https://zealnyc.com/wp-content/uploads/2014/06/moma.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 70px;
+}
+.whitney{
+  background-image:url("http://api.whitney.org/uploads/image/file/781043/lederman-o05a9997-web.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 70px;
+}
+.momath {
+  background-image:url("http://elizabethkann.com/wp-content/uploads/2013/02/DSC00866-800x600.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 70px;
+}
+.cooper {
+  background-image:url("https://www.inexhibit.com/wp-content/uploads/2014/10/xCooper-Hewitt-Design-Museum-New-York-021.jpg.pagespeed.ic.kFUxAjG2Am.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 70px;
+}
+.natural {
+  background-image:url("http://www.amnh.org/extension/amnh/design/amnh_user/images/home-share.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 70px;
+}
+.moma:hover> .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+}
+.whitney:hover> .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+  }
+.momath:hover > .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+  }
+  .cooper:hover > .overlay {
+      top: 0;
+      width:100%;
+      height:100%;
+      left: 0;
+      background-color:black;
+      opacity:0.6;
+    }
+  .natural:hover > .overlay {
+      top: 0;
+      width:100%;
+      height:100%;
+      left: 0;
+      background-color:black;
+      opacity:0.6;
+    }
