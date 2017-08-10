@@ -95,6 +95,7 @@ tr {
     display:table;
      table-layout: fixed;
     width:100%;
+    height: 100%;
 }
 
 
@@ -105,31 +106,57 @@ tr {
   background-position: center;
   margin: 10px;
 }
-.whitney{
-  background-image:url("http://api.whitney.org/uploads/image/file/781043/lederman-o05a9997-web.jpg");
+.ford{
+  background-image:url("https://cdn.psfk.com/wp-content/uploads/2017/01/ford_hub_oculus_nyc-1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin: 10px;
 }
-.momath {
-  background-image:url("http://elizabethkann.com/wp-content/uploads/2013/02/DSC00866-800x600.jpg");
+.meow {
+  background-image:url("https://untappedcities-wpengine.netdna-ssl.com/wp-content/uploads/2014/12/Meow-Parlor-NYC-Hestor-Street-Photos-Macaron-Parlor-035.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin: 10px;
 }
 
-
-.cooper {
-  background-image:url("https://www.inexhibit.com/wp-content/uploads/2014/10/xCooper-Hewitt-Design-Museum-New-York-021.jpg.pagespeed.ic.kFUxAjG2Am.jpg");
+.dumbo {
+  background-image:url("http://www.columbiastreetbrooklyn.com/wp-content/uploads/2015/07/BK-bridge-park.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin: 10px;
 }
-.natural {
-  background-image:url("http://www.amnh.org/extension/amnh/design/amnh_user/images/home-share.png");
+.high {
+  background-image:url("https://www.nycgovparks.org/photo_gallery/full_size/14435.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.rock {
+  background-image:url("https://www.nycgo.com/images/venues/106/tor_3000x2000__card.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.empire {
+  background-image:url("http://cdn.history.com/sites/2/2016/04/GettyImages-555173607.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}.central {
+  background-image:url("https://www.nyctourist.com/sites/default/files/central_park_billboard_0.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.island {
+  background-image:url("https://media.timeout.com/images/103809642/630/472/image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -143,7 +170,7 @@ tr {
     background-color:black;
     opacity:0.6;
 }
-.whitney:hover> .overlay {
+.ford:hover> .overlay {
     top: 0;
     width:100%;
     height:100%;
@@ -151,7 +178,7 @@ tr {
     background-color:black;
     opacity:0.6;
   }
-.momath:hover > .overlay {
+.meow:hover > .overlay {
     top: 0;
     width:100%;
     height:100%;
@@ -159,20 +186,51 @@ tr {
     background-color:black;
     opacity:0.6;
   }
-  .cooper:hover > .overlay {
-      top: 0;
-      width:100%;
-      height:100%;
-      left: 0;
-      background-color:black;
-      opacity:0.6;
+.dumbo:hover > .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
     }
-  .natural:hover > .overlay {
-      top: 0;
-      width:100%;
-      height:100%;
-      left: 0;
-      background-color:black;
-      opacity:0.6;
+.high:hover > .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
     }
-
+.rock:hover > .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+    }
+.empire:hover > .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+    }
+.central:hover > .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+    }
+.island:hover > .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+    } 
