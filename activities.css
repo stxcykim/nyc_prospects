@@ -98,8 +98,8 @@ tr {
 }
 
 
-.moma{
-  background-image:url("https://zealnyc.com/wp-content/uploads/2014/06/moma.jpg");
+.karaoke{
+  background-image:url("http://s3.amazonaws.com/btoimage/prism-thumbnails/articles/3699-2015126-karaoke-toronto.jpg-resize_then_crop-_frame_bg_color_FFF-h_1365-gravity_center-q_70-preserve_ratio_true-w_2048_.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -135,7 +135,7 @@ tr {
   background-position: center;
   margin: 10px;
 }
-.moma:hover> .overlay {
+.karaoke:hover> .overlay {
     top: 0;
     width:100%;
     height:100%;
