@@ -31,7 +31,7 @@
   </div>
   <center>
 
-    <h1> ACTIVITIES </h1>
+    <h1> ACTIVITIES <a href="#map"><img src="http://thrivesearch.com/wp-content/uploads/2015/06/map-marker-small-hi.png"></a></h1>
 
     <table style="width:100%">
   <tr>
@@ -264,13 +264,39 @@
   </tr>
 </table>
 
+</center>
 
+ <center>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var uluru = {lat: 40.761433, lng:-73.977622}
+  
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: uluru
+        });
+        var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+        });
+      }
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhWPHeQrSDFnREtlmJIuDKgwrI0liMTwA&callback=initMap">
+    </script>
 
+<a href="https://girlswhocode.com">
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/GWC_logo_2016_.png/1200px-GWC_logo_2016_.png">
+</a>
 
+<a href="team.html">
+<img src="http://freevector.co/wp-content/uploads/2014/03/77269-girl-with-big-head.png">
+</a>
 
-<a href="https://girlswhocode.com"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/GWC_logo_2016_.png/1200px-GWC_logo_2016_.png"></a>
-<a href="aboutus.html"><img src="http://nebula.wsimg.com/fd80862ea74c2ee7191c1a76e37b879a?AccessKeyId=4C7D2FC82D402DDA27E2&disposition=0&alloworigin=1"></a>
-<a href="http://www.aig.com"><img src="https://isalliance.org/wp-content/uploads/2017/04/AIG.png"></a>
+<a href="http://www.aig.com">
+<img src="https://isalliance.org/wp-content/uploads/2017/04/AIG.png">
+</a>
 
 </center>
 

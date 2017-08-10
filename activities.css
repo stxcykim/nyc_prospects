@@ -3,6 +3,13 @@
   color: #A9A9A9;
 }
 
+/*setting the size for the map*/
+#map {
+        height: 400px;
+        width: 100%;
+        margin-top: 50px;
+       } 
+
 /*keeping the menu fixed at the top of the page */
 .navigation{
   position: fixed;

@@ -7,6 +7,7 @@
 #map {
         height: 400px;
         width: 100%;
+        margin-bottom: 100px;
        } 
 
 /*keeping the menu fixed at the top of the page */
