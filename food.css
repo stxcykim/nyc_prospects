@@ -1,0 +1,241 @@
+/*changing of text in menu when hovered over */
+.museums:hover, .activities:hover, .attractions:hover, .food:hover,.team:hover{
+  color: #A9A9A9;
+}
+
+/*setting the size for the map*/
+#map {
+        height: 400px;
+        width: 100%;
+        margin-top: 50px;
+       } 
+
+/*keeping the menu fixed at the top of the page */
+.navigation{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  border:2px solid black;
+  border-radius: 3px;
+  background-color: black;
+}
+
+/*museum text */
+h1{
+  font-family: 'Zilla Slab', serif;
+  font-size:70px;
+  margin-top: 200px;
+}
+
+/*title for each museum */
+h2{
+  font-family: 'Shadows Into Light', cursive;
+  font-weight:bold;
+  color:white;
+}
+
+/*text for nyc logo */
+h4{
+  color:white;
+  font-size: 50px;
+  font-family: 'Monoton', cursive;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+/*text for things in menu */
+h3{
+  color:white;
+  font-family: 'Zilla Slab', serif;
+  /*font-family: 'Shadows Into Light', cursive;*/
+  font-size: 25px;
+}
+
+/*styling for the address,cost and info part*/
+p{
+  font-family: 'Zilla Slab', serif;
+  color:white;
+}
+
+/*changing of menu after it is clicked on */
+a{
+  color:white;
+  text-decoration: none;
+}
+
+/*styling the "reserve now" button */
+button{
+  font-family: 'Zilla Slab', serif;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-color: white;
+  background-color: transparent;
+  color:white;
+  border-radius: 3px;
+  padding: 15px 25px;
+}
+
+/*changing style of button when hovered over */
+button:hover, button:focus {
+background-color: white;
+color:black;
+}
+
+img{
+  width:100px;
+  margin: 10px;
+}
+
+
+
+/*LIST OF MUSEUMS BELOW */
+
+/*this makes each table space evenly spaced*/
+tr {
+    display:table;
+     table-layout: fixed;
+    width:100%;
+    height: 100%;
+}
+
+
+.spot{
+  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsSPhFpGXE_l7BnVBl1C7fQQu8RWHCDLjpB63Sn-bqjfKg4Igd");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.avocado{
+  background-image:url("https://static1.squarespace.com/static/57096dbcc2ea5138c55237d5/t/57097251746fb9dec49eb124/1490477545345/Healthy");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.chloe {
+  background-image:url("https://s-media-cache-ak0.pinimg.com/736x/ed/00/3c/ed003c09e9ba3cf291cdca854e2ebb1c--vegan-restaurants-vegan-food.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.van{
+  background-image:url("https://roaminghunger.com/img/trucks/original/538d0573-ca78-4bb5-9b9d-0a3446204482.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.butcher {
+  background-image:url("https://static1.squarespace.com/static/53d7f045e4b08cf75c2d230d/5451489be4b01261dc790029/54514d24e4b02179fa62c2f5/1414614310157/thebutchersdaughternewyorklandscape.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.john{
+  background-image:url("http://www.dinersdriveinsdiveslocations.com/johns-of-12th-street-new-york.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.sugar{
+  background-image:url("https://resizer.otstatic.com/v2/photos/large/24855828.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.max{
+  background-image:url("https://s-media-cache-ak0.pinimg.com/originals/0f/20/d5/0f20d56a3c310ac7864bc98e30ef6044.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.tap{
+  background-image:url("https://www.blakelynewyork.com/files/2646/three-shakes-blakely.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+
+
+
+
+.spot:hover> .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+}
+.avocado:hover > .overlay {
+      top: 0;
+      width:100%;
+      height:100%;
+      left: 0;
+      background-color:black;
+      opacity:0.6;
+    }
+    .chloe:hover > .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+  }
+.van:hover> .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+  }
+  .butcher:hover > .overlay {
+      top: 0;
+      width:100%;
+      height:100%;
+      left: 0;
+      background-color:black;
+      opacity:0.6;
+    }
+  .john:hover > .overlay {
+      top: 0;
+      width:100%
+      height:100%;
+      left: 0;
+      background-color:black;
+      opacity:0.6;
+    }
+     .sugar:hover > .overlay {
+      top: 0;
+      width:100%
+      height:100%;
+      left: 0;
+      background-color:black;
+      opacity:0.6;
+    }
+   .max:hover > .overlay {
+      top: 0;
+      width:100%
+      height:100%;
+      left: 0;
+      background-color:black;
+      opacity:0.6;
+    }
+    .tap:hover > .overlay {
+      top: 0;
+      width:100%
+      height:100%;
+      left: 0;
+      background-color:black;
+      opacity:0.6;
+    }
+    
