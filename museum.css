@@ -1,8 +1,3 @@
-/*changing of text in menu when hovered over */
-.museums:hover, .activities:hover, .attractions:hover, .food:hover,.team:hover{
-  color: #A9A9A9;
-}
-
 /*setting the size for the map*/
 #map {
         height: 400px;
@@ -10,21 +5,11 @@
         margin-bottom: 100px;
        } 
 
-/*keeping the menu fixed at the top of the page */
-.navigation{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  border:2px solid black;
-  border-radius: 3px;
-  background-color: black;
-}
-
 /*museum text */
 h1{
   font-family: 'Zilla Slab', serif;
   font-size:70px;
-  margin-top: 200px;
+  margin-top: 70px;
 }
 
 /*title for each museum */
@@ -85,6 +70,8 @@ img{
   width:100px;
   margin: 10px;
 }
+
+
 
 
 
