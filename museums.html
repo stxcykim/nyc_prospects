@@ -14,7 +14,8 @@
   <link rel="stylesheet" type="text/css" href="museum.css">
 
 </head>
-<body>
+
+ <body>
 
 <nav class="white" role="navigation">
     <div class="nav-wrapper container">
@@ -137,39 +138,24 @@
 
 
  <center>
-    <!-- OLD MAP FROM GOOGLE MAPS API
+ <div id="map"></div>
+<script>
+ function initMap() {
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 13,
+    center: {lat: 40.7831, lng: -73.9712}
+  });
 
-    <div id="map"></div>
-    <script>
-      function initMap() {
-        var uluru = {lat: 40.761433, lng:-73.977622}
-  
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 17,
-          center: uluru
-        });
-        var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
-        });
-      }
-    </script>
+  var transitLayer = new google.maps.TransitLayer();
+  transitLayer.setMap(map);
+}
+</script>
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhWPHeQrSDFnREtlmJIuDKgwrI0liMTwA&callback=initMap">
-    </script> -->
+    </script>
 
 
-      <div id="map">
-
-      <iframe width="100%" title="New York City Museums" height="500px" src="https://data.cityofnewyork.us/w/ekax-ky3z/25te-f2tw?cur=UsVnTC3It4K&from=root" frameborder="0"scrolling="no">
-
-      <a href="https://data.cityofnewyork.us/Recreation/New-York-City-Museums/ekax-ky3z" title="New York City Museums" target="_blank">
-      New York City Museums
-      </a>
-
-
-      </iframe>
-      </div>
+<!-- PUT THE MAP HERE -->
 
 <a href="https://girlswhocode.com">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/GWC_logo_2016_.png/1200px-GWC_logo_2016_.png">
