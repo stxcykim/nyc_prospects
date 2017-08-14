@@ -10,21 +10,11 @@
         margin-top: 50px;
        } 
 
-/*keeping the menu fixed at the top of the page */
-.navigation{
-  position: fixed;
-  top: 0;
-  width: 100%;
-  border:2px solid black;
-  border-radius: 3px;
-  background-color: black;
-}
-
 /*museum text */
 h1{
   font-family: 'Zilla Slab', serif;
   font-size:70px;
-  margin-top: 200px;
+  margin-top: 10px;
 }
 
 /*title for each museum */
