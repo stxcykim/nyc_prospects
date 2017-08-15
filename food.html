@@ -9,6 +9,8 @@
 <link href="https://fonts.googleapis.com/css?family=Inconsolata|Josefin+Slab|Pacifico|Plaster|Shadows+Into+Light|Zilla+Slab" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
 
 <title>Food | NYC Prospects</title>
 
@@ -255,31 +257,65 @@
 </center>
 
  <center>
-    <div id="map"></div>
-    <script>
+<script>
+      // This example requires the Places library. Include the libraries=places
+      // parameter when you first load the API. For example:
+      // <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places">
+
+      var map;
+      var infowindow;
+
       function initMap() {
-        var uluru = {lat: 40.761433, lng:-73.977622}
-  
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 17,
-          center: uluru
+        var pyrmont = {lat: 40.7831, lng: -73.9712};
+
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: pyrmont,
+          zoom: 13
         });
+
+        infowindow = new google.maps.InfoWindow();
+        var service = new google.maps.places.PlacesService(map);
+        service.nearbySearch({
+          location: pyrmont,
+          radius: 12000,
+          type: ['resturaunt', 'cafe']
+        }, callback);
+      }
+
+      function callback(results, status) {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+          for (var i = 0; i < results.length; i++) {
+            createMarker(results[i]);
+          }
+        }
+      }
+
+      function createMarker(place) {
+        var placeLoc = place.geometry.location;
         var marker = new google.maps.Marker({
-          position: uluru,
-          map: map
+          map: map,
+          position: place.geometry.location
+        });
+
+        google.maps.event.addListener(marker, 'click', function() {
+          infowindow.setContent(place.name);
+          infowindow.open(map, this);
         });
       }
+
+
+
+if (google.loader.ClientLocation) {
+            alert(google.loader.ClientLocation.latitude+" "+google.loader.ClientLocation.longitude);
+        }
+
     </script>
-    <script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhWPHeQrSDFnREtlmJIuDKgwrI0liMTwA&callback=initMap">
-    </script>
+
+ <div id="map"></div>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhWPHeQrSDFnREtlmJIuDKgwrI0liMTwA&libraries=places&callback=initMap" async defer></script>
 
 <a href="https://girlswhocode.com">
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a1/GWC_logo_2016_.png/1200px-GWC_logo_2016_.png">
-</a>
-
-<a href="team.html">
-<img src="http://freevector.co/wp-content/uploads/2014/03/77269-girl-with-big-head.png">
 </a>
 
 <a href="http://www.aig.com">

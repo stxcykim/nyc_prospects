@@ -12,16 +12,16 @@
 
 /*museum text */
 h1{
-  font-family: 'Zilla Slab', serif;
+  font-family: 'Julius Sans One', sans-serif;
   font-size:70px;
   margin-top: 10px;
 }
 
 /*title for each museum */
 h2{
-  font-family: 'Shadows Into Light', cursive;
-  font-weight:bold;
-  color:white;
+  font-family: 'Patrick Hand SC', cursive;
+/*  font-weight:bold;
+*/  color:white;
 }
 
 /*text for nyc logo */
