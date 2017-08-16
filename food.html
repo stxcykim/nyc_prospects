@@ -6,15 +6,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
   
 
-<title>Food | NYC Prospects</title>
-
 <link href="https://fonts.googleapis.com/css?family=Inconsolata|Josefin+Slab|Pacifico|Plaster|Shadows+Into+Light|Zilla+Slab" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
 
+<title>Food | NYC Prospects</title>
 
 <link rel="stylesheet" type="text/css" href="food.css">
+
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -263,19 +264,11 @@
 
     <input id="destination-input" class="controls" type="text"
         placeholder="Enter a destination location">
-<<<<<<< HEAD
 
     <div id="mode-selector" class="controls">
       <input type="radio" name="type" id="changemode-walking" checked="checked">
       <label for="changemode-walking">Walking</label>
 
-=======
-
-    <div id="mode-selector" class="controls">
-      <input type="radio" name="type" id="changemode-walking" checked="checked">
-      <label for="changemode-walking">Walking</label>
-
->>>>>>> ec0cd3d6bec207bb92baaa250983fb0b16f03d99
       <input type="radio" name="type" id="changemode-transit">
       <label for="changemode-transit">Transit</label>
 
@@ -303,37 +296,6 @@ function initMap() {
         }, callback);
 
         new AutocompleteDirectionsHandler(map);
-<<<<<<< HEAD
-      }
-function AutocompleteDirectionsHandler(map) {
-        this.map = map;
-        this.originPlaceId = null;
-        this.destinationPlaceId = null;
-        this.travelMode = 'WALKING';
-        var originInput = document.getElementById('origin-input');
-        var destinationInput = document.getElementById('destination-input');
-        var modeSelector = document.getElementById('mode-selector');
-        this.directionsService = new google.maps.DirectionsService;
-        this.directionsDisplay = new google.maps.DirectionsRenderer;
-        this.directionsDisplay.setMap(map);
-
-        var originAutocomplete = new google.maps.places.Autocomplete(
-            originInput, {placeIdOnly: true});
-        var destinationAutocomplete = new google.maps.places.Autocomplete(
-            destinationInput, {placeIdOnly: true});
-
-        this.setupClickListener('changemode-walking', 'WALKING');
-        this.setupClickListener('changemode-transit', 'TRANSIT');
-        this.setupClickListener('changemode-driving', 'DRIVING');
-
-        this.setupPlaceChangedListener(originAutocomplete, 'ORIG');
-        this.setupPlaceChangedListener(destinationAutocomplete, 'DEST');
-
-        this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(originInput);
-        this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(destinationInput);
-        this.map.controls[google.maps.ControlPosition.TOP_LEFT].push(modeSelector);
-=======
->>>>>>> ec0cd3d6bec207bb92baaa250983fb0b16f03d99
       }
 function AutocompleteDirectionsHandler(map) {
         this.map = map;
@@ -392,37 +354,6 @@ function AutocompleteDirectionsHandler(map) {
 
       };
 
-<<<<<<< HEAD
-      AutocompleteDirectionsHandler.prototype.setupClickListener = function(id, mode) {
-        var radioButton = document.getElementById(id);
-        var me = this;
-        radioButton.addEventListener('click', function() {
-          me.travelMode = mode;
-          me.route();
-        });
-      };
-
-      AutocompleteDirectionsHandler.prototype.setupPlaceChangedListener = function(autocomplete, mode) {
-        var me = this;
-        autocomplete.bindTo('bounds', this.map);
-        autocomplete.addListener('place_changed', function() {
-          var place = autocomplete.getPlace();
-          if (!place.place_id) {
-            window.alert("Please select an option from the dropdown list.");
-            return;
-          }
-          if (mode === 'ORIG') {
-            me.originPlaceId = place.place_id;
-          } else {
-            me.destinationPlaceId = place.place_id;
-          }
-          me.route();
-        });
-
-      };
-
-=======
->>>>>>> ec0cd3d6bec207bb92baaa250983fb0b16f03d99
       AutocompleteDirectionsHandler.prototype.route = function() {
         if (!this.originPlaceId || !this.destinationPlaceId) {
           return;
