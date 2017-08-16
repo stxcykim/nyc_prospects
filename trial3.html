@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  
     <title>Place Autocomplete</title>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
@@ -61,9 +63,12 @@
     </style>
     
 
+
     <script>
-        var map;
+    /*
+      var map;
       var infowindow;
+
 
       function initMap() {
         var pyrmont = {lat: -33.867, lng: 151.195};
@@ -73,11 +78,12 @@
           zoom: 15
         });
 
+
         infowindow = new google.maps.InfoWindow();
         var service = new google.maps.places.PlacesService(map);
         service.nearbySearch({
           location: pyrmont,
-          radius: 500,
+          radius: 800,
           type: ['store']
         }, callback);
       }
@@ -102,14 +108,13 @@
           infowindow.open(map, this);
         });
       }
+      */
     </script>
 
 
-
-
-
-
   </head>
+
+
 
 
   <body>
@@ -129,19 +134,40 @@
       <input type="radio" name="type" id="changemode-driving">
       <label for="changemode-driving">Driving</label>
     </div>
-  
     <div id="map"></div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhWPHeQrSDFnREtlmJIuDKgwrI0liMTwA&libraries=places&callback=initMap" async defer></script>
+    
 
 
 
 <script>
-      function initMap() {
-        var map = new google.maps.Map(document.getElementById('map'), {
+/*
+  var map = new google.maps.Map(document.getElementById('map'), {
           mapTypeControl: false,
-          center: {lat: -33.867, lng: 151.195};,
+          center: {lat: -33.867, lng: 151.195},
+                                              // ^^^^^ when semi-colon here (before comma), markers show but directions does not work
+          zoom: 13
+
+        });
+  var infoWindow;
+  */
+
+
+function initMap() {
+        var pyrmont = {lat: 40.7831, lng: -73.9712};
+
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: pyrmont,
           zoom: 13
         });
+
+
+        infowindow = new google.maps.InfoWindow();
+        var service = new google.maps.places.PlacesService(map);
+        service.nearbySearch({
+          location: pyrmont,
+          radius: 12000,
+          type: ['restaurant']
+        }, callback);
 
         new AutocompleteDirectionsHandler(map);
       }
@@ -227,10 +253,28 @@
         });
       };
 
+         function callback(results, status) {
+        if (status === google.maps.places.PlacesServiceStatus.OK) {
+          for (var i = 0; i < results.length; i++) {
+            createMarker(results[i]);
+          }
+        }
+      }
+
+      function createMarker(place) {
+        var placeLoc = place.geometry.location;
+        var marker = new google.maps.Marker({
+          map: map,
+          position: place.geometry.location
+        });
+
+        google.maps.event.addListener(marker, 'click', function() {
+          infowindow.setContent(place.name);
+          infowindow.open(map, this);
+        });
+      }
+
     </script>
-
-
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhWPHeQrSDFnREtlmJIuDKgwrI0liMTwA&libraries=places&callback=initMap"
-        async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDhWPHeQrSDFnREtlmJIuDKgwrI0liMTwA&libraries=places&callback=initMap" async defer></script>
   </body>
 </html>
