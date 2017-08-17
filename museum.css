@@ -1,15 +1,14 @@
 /*setting the size for the map*/
 #map {
-        height: 400px;
+        height: 700px;
         width: 100%;
-        margin-bottom: 100px;
        } 
 
 /*museum text */
 h1{
   font-family: 'Julius Sans One', sans-serif;
   font-size:70px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 /*title for each museum */
