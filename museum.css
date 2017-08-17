@@ -82,35 +82,35 @@ img{
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 70px;
+  margin: 40px;
 }
 .whitney{
   background-image:url("http://api.whitney.org/uploads/image/file/781604/large_main_image_whitney_resized.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 70px;
+  margin: 40px;
 }
 .met {
   background-image:url("http://www.metmuseum.org/-/media/Images/Promos/Footer%20Promos/Join%20and%20Give/Host%20an%20Event/Corporate%20Support_promo.jpg?h=480&w=720&la=en&hash=3B815336E4161D0AFA84E288718B4A4B6EAB8E3E");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 70px;
+  margin: 40px;
 }
 .cooper {
   background-image:url("http://ideat.thegoodhub.com/wp-content/uploads/sites/3/2015/11/immersion-room-2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 70px;
+  margin: 40px;
 }
 .natural {
   background-image:url("http://www.amnh.org/extension/amnh/design/amnh_user/images/home-share.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  margin: 70px;
+  margin: 40px;
 }
 .moma:hover> .overlay {
     top: 0;
