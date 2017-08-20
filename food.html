@@ -297,7 +297,7 @@ function initMap() {
 
         map = new google.maps.Map(document.getElementById('map'), {
           center: pyrmont,
-          zoom: 13
+          zoom: 12
         });
 
 
@@ -306,7 +306,8 @@ function initMap() {
         service.nearbySearch({
           location: pyrmont,
           radius: 12000,
-          type: ['food']
+          // type: ['cafe']
+          keyword: "(cafe) OR (resturaunt)" 
         }, callback);
 
         new AutocompleteDirectionsHandler(map);
