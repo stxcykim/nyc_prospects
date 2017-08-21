@@ -4,7 +4,12 @@
 
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
   <title>Museums | NYC Prospects</title>
+
+  <link rel="shortcut icon" href="nyc_prospects/favicon.ico" type="image/x-icon">
+<link rel="icon" href="nyc_prospects/favicon.ico" type="image/x-icon">
+
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
@@ -19,6 +24,15 @@
 
  <body>
 
+ <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10&appId=426613721066650";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 
 <nav class="white" role="navigation">
     <div class="nav-wrapper container">
@@ -27,24 +41,14 @@
         <li><a href="museums.html">Museums</a></li>
         <li><a href="activities.html">Activities</a></li>
         <li><a href="food.html">Food</a></li>
-            <li><a class="twitter-share-button"
-  href="https://twitter.com/share"
-  data-size="large"
-  data-text="custom `share text"
-  data-url="https://dev.twitter.com/web/tweet-button"
-  data-hashtags="example,demo"
-  data-via="twitterdev"
-  data-related="twitterapi,twitter"
-  hover="none">
-<img src="http://albinolullaby.com/img/s_tweet_button.png">
-</a>
-</li>
+        <li><a href="feedback.html">Feedback</a></li>
       </ul>
 
       <ul id="nav-mobile" class="side-nav">
         <li><a href="museums.html">Museums</a></li>
         <li><a href="activities.html">Activities</a></li>
         <li><a href="food.html">Food</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
              <li><a class="twitter-share-button"
   href="https://twitter.com/share"
   data-size="large"
@@ -57,6 +61,9 @@
 <img src="http://albinolullaby.com/img/s_tweet_button.png">
 </a>
 </li>
+<li>
+<a class="fb-share-button" data-href="https://stxcykim.github.io/nyc_prospects/nyc_events.html" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstxcykim.github.io%2Fnyc_prospects%2Fnyc_events.html&amp;src=sdkpreparse"></a></li>
+
       </ul>
       <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
     </div>
@@ -71,6 +78,21 @@ MUSEUMS
 <img src="http://thrivesearch.com/wp-content/uploads/2015/06/map-marker-small-hi.png">
 </a>
 </h1> 
+
+<a class="twitter-share-button"
+  href="https://twitter.com/share"
+  data-text="Check out this site to discover new events in NYC!"
+  data-url="https://stxcykim.github.io/nyc_prospects/nyc_events.html"
+  data-hashtags="NYCProspects,events"
+  data-via="twitterdev"
+  data-related="twitterapi,twitter">
+ <img src="http://albinolullaby.com/img/s_tweet_button.png" style="width:75px;"> 
+</a>
+
+<br>
+
+
+<a class="fb-share-button" data-href="https://stxcykim.github.io/nyc_prospects/nyc_events.html" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstxcykim.github.io%2Fnyc_prospects%2Fnyc_events.html&amp;src=sdkpreparse"></a>
 
 
 <div class="moma">
@@ -196,7 +218,7 @@ function initMap() {
 
         map = new google.maps.Map(document.getElementById('map'), {
           center: pyrmont,
-          zoom: 13
+          zoom: 12
         });
 
 

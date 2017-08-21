@@ -30,6 +30,7 @@
         <li><a href="museums.html">Museums</a></li>
         <li><a href="activities.html">Activities</a></li>
         <li><a href="food.html">Food</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
          <li><a class="twitter-share-button"
   href="https://twitter.com/share"
   data-size="large"
@@ -48,6 +49,7 @@
         <li><a href="museums.html">Museums</a></li>
         <li><a href="activities.html">Activities</a></li>
         <li><a href="food.html">Food</a></li>
+        <li><a href="feedback.html">Feedback</a></li>
          <li><a class="twitter-share-button"
   href="https://twitter.com/share"
   data-size="large"
@@ -66,7 +68,7 @@
   </nav>
 
 <center>
-    <h1> FOOD <a href="#map"><img src="http://thrivesearch.com/wp-content/uploads/2015/06/map-marker-small-hi.png"></a></h1>
+    <h1> FOOD <a href="#map"><img src="http://thrivesearch.com/wp-content/uploads/2015/06/map-marker-small-hi.png" style="margin-top: 30px;"></a></h1>
 </center>
 
     <table style="width:100%">
@@ -295,7 +297,7 @@ function initMap() {
 
         map = new google.maps.Map(document.getElementById('map'), {
           center: pyrmont,
-          zoom: 13
+          zoom: 12
         });
 
 
@@ -304,7 +306,8 @@ function initMap() {
         service.nearbySearch({
           location: pyrmont,
           radius: 12000,
-          type: ['food']
+          // type: ['cafe']
+          keyword: "(cafe) OR (resturaunt) " 
         }, callback);
 
         new AutocompleteDirectionsHandler(map);
