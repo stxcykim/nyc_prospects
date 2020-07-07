@@ -1,21 +1,21 @@
-/*setting the size for the map*/
-#map {
-        height: 700px;
-        width: 100%;
-       } 
+/*changing of text in menu when hovered over */
+.museums:hover, .activities:hover, .attractions:hover, .food:hover,.team:hover{
+  color: #A9A9A9;
+}
 
-/*museum text */
+/*label text */
 h1{
   font-family: 'Julius Sans One', sans-serif;
   font-size:70px;
   margin-top: 40px;
 }
 
-/*title for each museum */
+/*title for each location */
 h2{
-  font-family: 'Patrick Hand SC', cursive;
-  font-weight:bold;
-  color:white;
+  font-family: 'Julius Sans One', sans-serif;
+font-size:32px;
+font-weight:bold;
+color:white;
 }
 
 /*text for nyc logo */
@@ -31,13 +31,11 @@ h4{
 h3{
   color:white;
   font-family: 'Julius Sans One', sans-serif;
-  /*font-family: 'Shadows Into Light', cursive;*/
   font-size: 25px;
 }
 
-/*styling for the address,cost and info part*/
+/*styling for description*/
 p{
-  font-family: 'Zilla Slab', serif;
   color:white;
 }
 
@@ -49,7 +47,6 @@ a{
 
 /*styling the "reserve now" button */
 button{
-  font-family: 'Zilla Slab', serif;
   font-size: 15px;
   text-transform: uppercase;
   border-color: white;
@@ -70,12 +67,7 @@ img{
   margin: 10px;
 }
 
-
-
-
-
 /*LIST OF MUSEUMS BELOW */
-
 
 .moma{
   background-image:url("https://storage.googleapis.com/thehundreds/media/2014/01/oh-the-places-youll-go-033.jpg");
@@ -153,57 +145,287 @@ img{
       opacity:0.6;
     }
 
+  /*LIST OF ACTIVITIES BELOW */
+
+  tr {
+    display:table;
+     table-layout: fixed;
+    width:100%;
+    height: 100%;
+}
 
 
-/*mAP*/
-      #map {
-        height: 400px;
-        width: 100%;
-        margin-top: 50px;
-      }
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      .controls {
-        margin-top: 10px;
-        border: 1px solid transparent;
-        border-radius: 2px 0 0 2px;
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        height: 32px;
-        outline: none;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-      }
+.chelsea{
+  background-image:url("https://imgs.6sqft.com/wp-content/uploads/2018/03/21095155/Chelsea-Market-Jamestown2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.vessel{
+  background-image:url("https://imgs.6sqft.com/wp-content/uploads/2016/09/14134115/Thomas-Heatherwick-Hudson-Yards-Vessel-1-e1473875258206.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.bryant{
+  background-image:url("https://park.marmaranyc.com/wp-content/uploads/sites/2/2017/09/shutterstock_594698690.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
 
-      #origin-input,
-      #destination-input {
-        background-color: #fff;
-        font-family: Roboto;
-        font-size: 15px;
-        font-weight: 300;
-        margin-left: 12px;
-        padding: 0 11px 0 13px;
-        text-overflow: ellipsis;
-        width: 200px;
-      }
+.dumbo {
+  background-image:url("http://www.columbiastreetbrooklyn.com/wp-content/uploads/2015/07/BK-bridge-park.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.high {
+  background-image:url("https://www.nycgovparks.org/photo_gallery/full_size/14435.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.rock {
+  background-image:url("https://www.nycgo.com/images/venues/106/tor_3000x2000__card.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.empire {
+  background-image:url("http://cdn.history.com/sites/2/2016/04/GettyImages-555173607.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}.central {
+  background-image:url("https://media.architecturaldigest.com/photos/5e811f71b27fd800085d543b/16:9/w_2560%2Cc_limit/GettyImages-1090450856.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.island {
+  background-image:url("https://media.timeout.com/images/103809642/630/472/image.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.chelsea:hover> .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+}
+.vessel:hover> .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+  }
+.bryant:hover > .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+  }
+.dumbo:hover > .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+    }
+.high:hover > .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+    }
+.rock:hover > .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+    }
+.empire:hover > .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+    }
+.central:hover > .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+    }
+.island:hover > .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+    } 
 
-      #origin-input:focus,
-      #destination-input:focus {
-        border-color: #4d90fe;
-      }
+  /*LIST OF FOODS BELOW*/
 
-      #mode-selector {
-        color: #fff;
-        background-color: #4d90fe;
-        margin-left: 12px;
-        padding: 5px 11px 0px 11px;
-      }
+    .spot{
+  background-image:url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsSPhFpGXE_l7BnVBl1C7fQQu8RWHCDLjpB63Sn-bqjfKg4Igd");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.avocado{
+  background-image:url("https://static1.squarespace.com/static/57096dbcc2ea5138c55237d5/t/57097251746fb9dec49eb124/1490477545345/Healthy");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.chloe {
+  background-image:url("https://s-media-cache-ak0.pinimg.com/736x/ed/00/3c/ed003c09e9ba3cf291cdca854e2ebb1c--vegan-restaurants-vegan-food.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.van{
+  background-image:url("https://cdn.vox-cdn.com/thumbor/1vPrFiB9Y96zk_OSvHkZend71Ss=/0x0:550x440/1820x1213/filters:focal(231x176:319x264):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/60318537/van_leeuwen.0.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.butcher {
+  background-image:url("https://petitepassport.com/dev/wordpress/wp-content/uploads/2016/05/butchersdaughter7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.john{
+  background-image:url("http://www.dinersdriveinsdiveslocations.com/johns-of-12th-street-new-york.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.sugar{
+  background-image:url("http://kimandcarrie.com/wp-content/uploads/2015/12/IMG_0136.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.max{
+  background-image:url("https://s-media-cache-ak0.pinimg.com/originals/0f/20/d5/0f20d56a3c310ac7864bc98e30ef6044.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
+.tap{
+  background-image:url("https://lachatupdate.files.wordpress.com/2020/03/download-1-2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 10px;
+}
 
-      #mode-selector label {
-        font-family: Roboto;
-        font-size: 13px;
-        font-weight: 300;
-      }
-
+.spot:hover> .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+}
+.avocado:hover > .overlay {
+      top: 0;
+      width:100%;
+      height:100%;
+      left: 0;
+      background-color:black;
+      opacity:0.6;
+    }
+    .chloe:hover > .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+  }
+.van:hover> .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+  }
+  .butcher:hover > .overlay {
+      top: 0;
+      width:100%;
+      height:100%;
+      left: 0;
+      background-color:black;
+      opacity:0.6;
+    }
+  .john:hover > .overlay {
+      top: 0;
+      width:100%
+      height:100%;
+      left: 0;
+      background-color:black;
+      opacity:0.6;
+    }
+     .sugar:hover > .overlay {
+      top: 0;
+      width:100%
+      height:100%;
+      left: 0;
+      background-color:black;
+      opacity:0.6;
+    }
+   .max:hover > .overlay {
+      top: 0;
+      width:100%
+      height:100%;
+      left: 0;
+      background-color:black;
+      opacity:0.6;
+    }
+    .tap:hover > .overlay {
+      top: 0;
+      width:100%
+      height:100%;
+      left: 0;
+      background-color:black;
+      opacity:0.6;
+    }
