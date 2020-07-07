@@ -429,3 +429,111 @@ img{
       background-color:black;
       opacity:0.6;
     }
+      
+  /*LIST OF COVID STUFF*/
+    .donate{
+  background-image:url("https://www.hydroreview.com/wp-content/uploads/sites/11/2020/03/Donation.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 40px;
+}
+  .educate{
+  background-image:url("https://www.lutheranworld.org/sites/default/files/styles/composition/public/donate-covid-19-liberia-sanitizer-slider.jpg?itok=38ABbbjB");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 40px;
+}
+  .movie{
+  background-image:url("https://media2.s-nbcnews.com/j/newscms/2019_16/2716636/190115-netflix-mn-2x1-1010_5f2332277b3dc97229b069a729d6ee62.fit-760w.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 40px;
+}
+.chloeting{
+  background-image:url("https://i2.wp.com/www.valleymagazinepsu.com/wp-content/uploads/2020/05/IMG_8478.jpg?fit=690%2C561");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 40px;
+}
+.coursera {
+  background-image:url("https://lh3.googleusercontent.com/proxy/jbjKzJPjYPNDqjMYdZf1kcL7RMJu9HX-v-OLEjJjZRprGC8q4mOLBg2YXHcYUU_fP9wLUXU6afguzSp1ZW4cvl_9_Db-Ta0GCKMU3J9hULUNZTlS75P8t3evPULqGMP9");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 40px;
+}
+.cook {
+  background-image:url("https://dynaimage.cdn.cnn.com/cnn/c_fill,g_auto,w_1200,h_675,ar_16:9/https%3A%2F%2Fcdn.cnn.com%2Fcnnnext%2Fdam%2Fassets%2F200319162747-family-cooking-stock.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 40px;
+}
+.game {
+  background-image:url("https://i.pcmag.com/imagery/articles/006WfuWOHAjdQ4T5e5c6UAS-8.fit_scale.size_2698x1517.v1569487479.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: 40px;
+}
+.donate:hover> .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+}
+.educate:hover> .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+}
+.movie:hover> .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+}
+.chloeting:hover> .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+  }
+.coursera:hover > .overlay {
+    top: 0;
+    width:100%;
+    height:100%;
+    left: 0;
+    background-color:black;
+    opacity:0.6;
+  }
+  .cook:hover > .overlay {
+      top: 0;
+      width:100%;
+      height:100%;
+      left: 0;
+      background-color:black;
+      opacity:0.6;
+    }
+  .game:hover > .overlay {
+      top: 0;
+      width:100%;
+      height:100%;
+      left: 0;
+      background-color:black;
+      opacity:0.6;
+    }
+
