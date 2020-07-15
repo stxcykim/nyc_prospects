@@ -1,105 +1,35 @@
-<!doctype html>
-<html>
-<head>
 
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-  <meta charset="utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-  <title>Activities | NYC Prospects</title>
-
+  <title>Activities| NYC Prospects</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bebas+Neue&family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
   <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-
-  <link href="https://fonts.googleapis.com/css?family=Inconsolata|Josefin+Slab|Pacifico|Plaster|Shadows+Into+Light|Zilla+Slab" rel="stylesheet"> 
-  <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
-  <link href = "data:image/x-con;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAABILAAASCwAAAAAAAAAAAAAUEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH///38///9/P8UEhH/FBIR///9/P///fz/FBIR/xQSEf///fz///38/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR///9/P///fz/FBIR/xQSEf///fz///38/xQSEf8UEhH///38///9/P8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf///fz///38/xQSEf8UEhH///38///9/P8UEhH/FBIR///9/P///fz/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH///38///9/P8UEhH/FBIR///9/P///fz/FBIR/xQSEf///fz///38///9/P///fz///38///9/P8UEhH/FBIR///9/P///fz/FBIR/xQSEf///fz///38/xQSEf8UEhH///38///9/P///fz///38///9/P///fz/FBIR/xQSEf///fz///38/xQSEf8UEhH///38///9/P8UEhH/FBIR///9/P///fz/FBIR/xQSEf///fz///38/xQSEf8UEhH///38///9/P8UEhH/FBIR///9/P///fz/FBIR/xQSEf///fz///38/xQSEf8UEhH///38///9/P8UEhH/FBIR///9/P///fz///38///9/P///fz///38/xQSEf8UEhH///38///9/P///fz///38///9/P///fz/FBIR/xQSEf///fz///38///9/P///fz///38///9/P8UEhH/FBIR///9/P///fz///38///9/P///fz///38/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/
-FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8UEhH/FBIR/xQSEf8U
-EhH/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-AAAAAAAAAAAAAA==" rel="icon" type="image/x-icon" />
-
-      <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-      html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-      }
-      .controls {
-        margin-top: 10px;
-        border: 1px solid transparent;
-        border-radius: 2px 0 0 2px;
-        box-sizing: border-box;
-        -moz-box-sizing: border-box;
-        height: 32px;
-        outline: none;
-        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-      }
-
-      #origin-input,
-      #destination-input {
-        background-color: #fff;
-        font-family: Roboto;
-        font-size: 15px;
-        font-weight: 300;
-        margin-left: 12px;
-        padding: 0 11px 0 13px;
-        text-overflow: ellipsis;
-        width: 200px;
-      }
-
-      #origin-input:focus,
-      #destination-input:focus {
-        border-color: #4d90fe;
-      }
-
-      #mode-selector {
-        color: #fff;
-        background-color: #4d90fe;
-        margin-left: 12px;
-        padding: 5px 11px 0px 11px;
-      }
-
-      #mode-selector label {
-        font-family: Roboto;
-        font-size: 13px;
-        font-weight: 300;
-      }
-
-    </style>
-
-  <title>Activities | NYC Prospects</title>
   <link rel="stylesheet" type="text/css" href="museum.css">
 </head>
+
 <body>
 
-  <nav class="white" role="navigation">
+  <nav class="white" role="navigation" style="font-family: 'Open Sans Condensed', sans-serif;">
     <div class="nav-wrapper container">
-      <p><a id="logo-container" href="nyc_events.html" class="brand-logo" style="font-family: 'Monoton', cursive;">NYC Prospects</a></p>
+      <a id="logo-container" href="nyc_events.html" class="brand-logo" style="color:black;">NP</a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="museums.html">MUSEUMS</a></li>
-        <li><a href="activities.html">ACTIVITIES</a></li>
-        <li><a href="food.html">FOOD</a></li>
-        <li><a href="covid.html">COVID-19</a></li>
-        <li><a href="feedback.html">FEEDBACK</a></li>
+        <li><a href="museums.html" style="color:black;">MUSEUMS</a></li>
+        <li><a href="activities.html" style="color:black;">ACTIVITIES</a></li>
+        <li><a href="food.html" style="color:black;">FOOD</a></li>
+        <li><a href="covid.html" style="color:black;">COVID-19</a></li>
       </ul>
       <ul id="nav-mobile" class="side-nav">
         <li><a href="museums.html">MUSEUMS</a></li>
         <li><a href="activities.html">ACTIVITIES</a></li>
         <li><a href="food.html">FOOD</a></li>
         <li><a href="covid.html">COVID-19</a></li>
-        <li><a href="feedback.html">FEEDBACK</a></li> 
       </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      <a href="#" data-activates="nav-mobile" class="button-collapse" style="color:black;"><i class="material-icons">menu</i></a>
     </div>
   </nav>
   
@@ -276,22 +206,6 @@ AAAAAAAAAAAAAA==" rel="icon" type="image/x-icon" />
 </div>
 
 </center>
-
-<!--twitter share button
-<a class="twitter-share-button"
-  href="https://twitter.com/share"
-  data-text="Check out this site to discover new events in NYC!"
-  data-url="https://stxcykim.github.io/nyc_prospects/nyc_events.html"
-  data-hashtags="NYCProspects,events"
-  data-via="twitterdev"
-  data-related="twitterapi,twitter">
- <img src="http://albinolullaby.com/img/s_tweet_button.png" style="width:88px;"> 
-</a><br> 
--->
-
-<!--Facebook share button
-<a class="fb-share-button" data-href="https://stxcykim.github.io/nyc_prospects/nyc_events.html" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fstxcykim.github.io%2Fnyc_prospects%2Fnyc_events.html&amp;src=sdkpreparse"></a>
--->
 
 <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
 <script src="js/materialize.js"></script>
