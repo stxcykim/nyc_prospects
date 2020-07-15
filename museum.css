@@ -5,38 +5,22 @@
 
 /*label text */
 h1{
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: 'Abril Fatface', cursive;
   font-size:70px;
   margin-top: 40px;
 }
 
 /*title for each location */
 h2{
-  font-family: 'Julius Sans One', sans-serif;
-font-size:32px;
-font-weight:bold;
-color:white;
-}
-
-/*text for nyc logo */
-h4{
+  font-family: 'Bebas Neue', cursive;
+  font-size:32px;
   color:white;
-  font-size: 50px;
-  font-family: 'Monoton', cursive;
-  margin-top: 5px;
-  margin-bottom: 5px;
-}
-
-/*text for things in menu */
-h3{
-  color:white;
-  font-family: 'Julius Sans One', sans-serif;
-  font-size: 25px;
 }
 
 /*styling for description*/
 p{
   color:white;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 /*changing of menu after it is clicked on */
@@ -47,13 +31,12 @@ a{
 
 /*styling the "reserve now" button */
 button{
-  font-size: 15px;
+  font-size:15px;
+  font-family: 'Open Sans Condensed', sans-serif;
   text-transform: uppercase;
-  border-color: white;
-  background-color: transparent;
-  color:white;
-  border-radius: 3px;
-  padding: 15px 25px;
+  border:1px solid #ffffff;
+  background-color:transparent;
+  padding:15px 25px;
 }
 
 /*changing style of button when hovered over */
