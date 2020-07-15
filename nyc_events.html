@@ -11,6 +11,31 @@
   <link rel="stylesheet" type="text/css" href="museum.css">
 </head>
 
+<style> 
+input[type=text] {
+  font-family: 'Open Sans Condensed', sans-serif; 
+  border:1px solid #ffffff; 
+  background-color:transparent; 
+  padding:40px 120px;
+}
+input[type=email] {
+  font-family: 'Open Sans Condensed', sans-serif; 
+  border:1px solid #ffffff; 
+  background-color:transparent; 
+  padding:10px 120px;
+}
+input[type=submit] {
+  margin: 20px; 
+  font-family: 'Open Sans Condensed', sans-serif; 
+  border:1px solid #ffffff; 
+  background-color:transparent; 
+  padding:10px 20px;
+}
+input[type=submit]:hover {
+  background-color: white;
+  color:black;
+</style>
+
   <body style="background-image: url('https://assets.newatlas.com/dims4/default/fe42011/2147483647/strip/true/crop/4500x3000+0+0/resize/1200x800!/quality/90/?url=http%3A%2F%2Fnewatlas-brightspot.s3.amazonaws.com%2Farchive%2Ftallest-skyscrapers-demolished-10.jpg'); height:100%; background-position:center; background-repeat:no-repeat; background-size: cover;">
 
   <nav class="white" role="navigation" style="font-family: 'Open Sans Condensed', sans-serif;">
@@ -41,17 +66,16 @@
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
     <footer class = "page-footer black">
-      <div id="form" style="margin-top: 40px; margin-left: 40px; margin-right: 40px;">
+      <div id="form">
         <form action="https://formspree.io/nycprospects2017@gmail.com" method="POST" style="margin: 30px;">
           <p> Please give us any feedback: </p>
           <input type="text" name="name">
           <p> Email:</p>
           <input type="email" name="_replyto">
-          <center><input type="submit" value="Send" style="margin: 20px;">
-        </form>
+          <center><input type="submit" value="Send">
+        </form><br><br><br>
       </div>
     </footer>
-
   </div>
 
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
